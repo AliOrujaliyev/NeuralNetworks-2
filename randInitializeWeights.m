@@ -20,8 +20,12 @@ W = zeros(L_out, 1 + L_in);
 %
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 epsilon_init = 0.12
 W = rand(L_out, 1 + L_in) * 2 * epsilon_init - epsilon_init;
+=======
+
+>>>>>>> 4ee63c8c0b53d90afd440d55b15edd94dd09fe8e
 =======
 
 >>>>>>> 4ee63c8c0b53d90afd440d55b15edd94dd09fe8e

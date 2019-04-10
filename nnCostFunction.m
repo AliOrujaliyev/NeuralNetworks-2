@@ -25,6 +25,10 @@ Theta2 = reshape(nn_params((1 + (hidden_layer_size * (input_layer_size + 1))):en
 % Setup some useful variables
 m = size(X, 1);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+K = num_labels;
+>>>>>>> 4ee63c8c0b53d90afd440d55b15edd94dd09fe8e
 =======
 K = num_labels;
 >>>>>>> 4ee63c8c0b53d90afd440d55b15edd94dd09fe8e
@@ -45,6 +49,7 @@ Theta2_grad = zeros(size(Theta2));
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 X = [ones(m, 1), X];
 h = sigmoid(X*Theta1');
 h = [ones(m, 1), h];
@@ -63,6 +68,8 @@ theta2 = Theta2(:,2:end);
 J = (1/m) * sum(sum(-y2 .* log(h2') - (1-y2) .* log(1-h2'))) + (lambda/(2*m)) * ((sum(sum(theta1.^2))) + (sum(sum(theta2.^2))));
 
 =======
+=======
+>>>>>>> 4ee63c8c0b53d90afd440d55b15edd94dd09fe8e
 disp(size(Theta1));
 disp(size(Theta2));
 disp(size(K));
@@ -75,6 +82,9 @@ h = sigmoid(X*Theta1);
 for i = i:m
 
 end 
+<<<<<<< HEAD
+>>>>>>> 4ee63c8c0b53d90afd440d55b15edd94dd09fe8e
+=======
 >>>>>>> 4ee63c8c0b53d90afd440d55b15edd94dd09fe8e
 
 
@@ -97,6 +107,7 @@ end
 %               over the training examples if you are implementing it for the 
 %               first time.
 %
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 delta1 = zeros(size(Theta1));
@@ -130,6 +141,8 @@ Theta2_grad = (1/m) * delta2;
 
 =======
 >>>>>>> 4ee63c8c0b53d90afd440d55b15edd94dd09fe8e
+=======
+>>>>>>> 4ee63c8c0b53d90afd440d55b15edd94dd09fe8e
 % Part 3: Implement regularization with the cost function and gradients.
 %
 %         Hint: You can implement this around the code for
@@ -140,8 +153,13 @@ Theta2_grad = (1/m) * delta2;
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Theta1_grad(:,2:end) = Theta1_grad(:,2:end) + (lambda/m) * Theta1(:,2:end);
 Theta2_grad(:,2:end) = Theta2_grad(:,2:end) + (lambda/m) * Theta2(:,2:end);
+=======
+
+
+>>>>>>> 4ee63c8c0b53d90afd440d55b15edd94dd09fe8e
 =======
 
 

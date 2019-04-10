@@ -14,7 +14,11 @@ g = zeros(size(z));
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 g = sigmoid(z).*(1-sigmoid(z));
+=======
+
+>>>>>>> 4ee63c8c0b53d90afd440d55b15edd94dd09fe8e
 =======
 
 >>>>>>> 4ee63c8c0b53d90afd440d55b15edd94dd09fe8e
